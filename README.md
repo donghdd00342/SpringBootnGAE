@@ -52,6 +52,12 @@ to (`src/main/test/...`).  The following resources are quite useful:
 * [Mockito](http://mockito.org/)
 * [Truth](http://google.github.io/truth/)
 
+## Help
+
+`mvn help:describe -Dplugin=appengine`
+
+`mvn appengine:help -Ddetail=true -Dgoal=<goal-name>` to display parameter details. Ex: `mvn appengine:help -Ddetail=true -Dgoal=run`
+
 
 For further information, consult the
 [Java App Engine](https://developers.google.com/appengine/docs/java/overview) documentation.
@@ -158,5 +164,13 @@ Please follow these instructions to work around this issue:
 <system-properties>
   <property name="java.util.logging.config.file" value="WEB-INF/classes/logging.properties"/>
 </system-properties>
+```
+
+3. Logger
+```java
+import java.util.logging.Logger;
+private static final Logger log = Logger.getLogger(HelloworldController.class.getName());
+log.info("info=============================================================");
+log.warning("warning-------------------------------------------------------");
 ```
 
