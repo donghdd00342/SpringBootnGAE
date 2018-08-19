@@ -22,6 +22,12 @@ detailed instructions.
 
     `gcloud app create`
 
+* And ...
+1. gcloud components list / 
+2. gcloud auth list / gcloud config set account `ACCOUNT`
+3. gcloud projects list
+4. gcloud config set project <PROJECT_ID> / gcloud config list project
+
 ## Maven
 ### Running locally
 
